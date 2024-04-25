@@ -35,6 +35,8 @@ header .wrapper {
 h1 {
     color: var(--clr-accent-1);
     letter-spacing: 3px;
+    font-size: 1.7rem;
+    font-family: 'Orbitron';
     border-bottom: 2px solid var(--clr-accent-1);
 }
 
