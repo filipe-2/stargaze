@@ -5,6 +5,7 @@ header {
     position: fixed;
     inset: 0 0 auto;
     padding: 15px;
+    border-bottom: 1px solid var(--clr-accent-1);
 }
 
 header .wrapper {
@@ -18,12 +19,32 @@ header .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px
+}
+
+.branding {
+    gap: 10px;
+}
+
+.branding__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     color: var(--clr-accent-1);
     letter-spacing: 3px;
+    border-bottom: 2px solid var(--clr-accent-1);
+}
+
+.branding h2 {
+    font-size: 0.85rem;
+    color: var(--clr-neutral-1);
+}
+
+.branding img {
+    border-radius: 50%;
 }
 
 .navbar li {
@@ -34,6 +55,6 @@ h1 {
     font-weight: bold;
 }
 
-.navbar a.current-section {
+.navbar a.navbar__current-section {
     color: var(--clr-accent-1);
 }

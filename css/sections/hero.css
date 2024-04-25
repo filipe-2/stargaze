@@ -28,3 +28,13 @@
     line-height: 25px;
     letter-spacing: 2.5px;
 }
+
+.hero__btns-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.hero__btn {
+    font-weight: bold;
+    font-size: 1rem;
+}
