@@ -1,5 +1,5 @@
 .hero {
-    background-image: url('../../assets/imgs/banner.jpg');
+    background-image: url('../../../assets/imgs/banner.jpg');
     background-size: cover;
     background-position: 75%;
     object-fit: cover;
