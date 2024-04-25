@@ -11,6 +11,14 @@ Welcome! This is the repository for the **StarGaze** project, here you will find
 
 ![Preview](./assets/imgs/preview.jpg)
 
+## Description
+
+This project consists of a single-page website for a Space Agency called StarGaze.
+
+Technologies used:
+
+<img src="https://skillicons.dev/icons?i=html,css,js,python,flask,git&theme=dark" />
+
 ## How to access 🔗
 
 To access the StarGaze website, just [click here](https://filipe-2.github.io/stargaze/) or type [filipe-2.github.io/stargaze](https://filipe-2.github.io/stargaze/) on your browser and hit enter.
