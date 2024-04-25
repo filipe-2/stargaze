@@ -13,7 +13,7 @@ Welcome! This is the repository for the **StarGaze** project, here you will find
 
 ## Description
 
-This project consists of a single-page website for a Space Agency called StarGaze.
+This project consists of a single-page website for a Space Agency called **StarGaze**.
 
 Technologies used:
 
