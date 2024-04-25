@@ -1,0 +1,41 @@
+.missions {
+    background-color: var(--bg-clr-3);
+}
+
+.missions__title-wrapper {
+    background-color: var(--clr-accent-1);
+    padding: 5px 10px;
+    text-align: center;
+    box-shadow: 10px 0 25px var(--bg-clr-1);
+}
+
+.missions__title {
+    color: var(--clr-neutral-2);
+    font-family: 'Orbitron';
+
+}
+
+.missions__cards-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+}
+
+.missions__card {
+    margin-block: 25px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: var(--bg-clr-1);
+    box-shadow: 10px 10px 25px var(--bg-clr-1);
+}
+
+.missions__card-title {
+    text-align: center;
+    font-family: 'Orbitron';
+    margin-bottom: 15px;
+}
+
+.missions__card-description {
+    text-align: justify;
+}

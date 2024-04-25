@@ -4,8 +4,10 @@ header {
     color: var(--clr-neutral-1);
     position: fixed;
     inset: 0 0 auto;
+    z-index: 1;
     padding: 15px;
     border-bottom: 1px solid var(--clr-accent-1);
+    box-shadow: 0 0 50px 15px var(--bg-clr-1);
 }
 
 header .wrapper {
