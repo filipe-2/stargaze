@@ -19,9 +19,6 @@ header .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.branding {
     gap: 10px;
 }
 
@@ -49,14 +46,14 @@ h1 {
     border-radius: 50%;
 }
 
-.navbar li {
-    padding: 15px;
-}
-
 .navbar a {
+    font-family: 'Orbitron';
+    font-size: 0.85rem;
     font-weight: bold;
+    padding: 5px 10px;
 }
 
 .navbar a.navbar__current-section {
     color: var(--clr-accent-1);
+    border-bottom: 2px solid var(--clr-accent-1);
 }

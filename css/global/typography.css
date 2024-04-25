@@ -21,3 +21,7 @@ a:active {
 ul {
     list-style: none;
 }
+
+button {
+    font-family: 'Orbitron';
+}
