@@ -1,15 +1,48 @@
 footer {
-    /* background-image: url('../../assets/imgs/planets.jpg'); */
-    background-color: var(--bg-clr-1);
-    /* background-size: cover;
-    background-position: center;
-    object-fit: cover; */
+    background-image: url('../../../assets/imgs/planets.jpg');
+    background-size: cover;
+    background-position: bottom;
+    object-fit: cover;
     border-top: 1px solid var(--clr-accent-1);
     padding: 15px;
 }
 
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-block: 10px 25px;
+}
+
+.footer-nav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Orbitron';
+    font-size: 0.8rem;
+}
+
+.footer-nav__list.social {
+    align-items: center;
+    font-size: 1rem;
+}
+
+.social a {
+    color: var(--clr-accent-1);
+}
+
+.footer-nav__list a {
+    font-weight: bold;
+}
+
 footer h3 {
-    text-align: center;
+    width: fit-content;
+    margin-inline: auto;
+    padding-inline: 10px;
+    border-top: 2px solid var(--clr-accent-1);
+    margin-bottom: 10px;
 }
 
 .copy-msg {

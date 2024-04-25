@@ -12,7 +12,6 @@
 .missions__title {
     color: var(--clr-neutral-2);
     font-family: 'Orbitron';
-
 }
 
 .missions__cards-wrapper {
@@ -20,6 +19,7 @@
     justify-content: space-evenly;
     align-items: center;
     gap: 25px;
+    padding-block: 25px;
 }
 
 .missions__card {
@@ -44,7 +44,7 @@
 .missions__card-title {
     text-align: center;
     font-family: 'Orbitron';
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--clr-accent-1);
     background-color: var(--bg-clr-2);
     border-top: 2px solid var(--clr-accent-1);
@@ -54,7 +54,7 @@
     top: 10px;
     left: 10px;
     right: 10px;
-    bottom: 205px;
+    bottom: 210px;
     transition: bottom 500ms;
 }
 
