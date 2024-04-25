@@ -9,7 +9,7 @@ Welcome! This is the repository for the **StarGaze** project, here you will find
 
 ## Preview
 
-![Preview](./assets/imgs/preview.jpg)
+![Preview](./assets/imgs/preview.png)
 
 ## Description
 
