@@ -1,0 +1,39 @@
+header {
+    background-color: var(--bg-clr-2);
+    backdrop-filter: blur(15px);
+    color: var(--clr-neutral-1);
+    position: fixed;
+    inset: 0 0 auto;
+    padding: 15px;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.branding,
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px
+}
+
+h1 {
+    color: var(--clr-accent-1);
+    letter-spacing: 3px;
+}
+
+.navbar li {
+    padding: 15px;
+}
+
+.navbar a {
+    font-weight: bold;
+}
+
+.navbar a.current-section {
+    color: var(--clr-accent-1);
+}

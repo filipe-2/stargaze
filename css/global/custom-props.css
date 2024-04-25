@@ -1,0 +1,12 @@
+:root {
+    /* Colors */
+    --bg-clr-1: hsl(0, 0%, 0%);
+    --bg-clr-2: hsl(0, 0%, 0%, 0.5);
+
+    --clr-neutral-1: hsl(0, 0%, 100%);
+
+    --clr-accent-1: hsl(224, 100%, 68%);
+
+    /* Fonts */
+    --font-1: 'Cormorant SC', serif;
+}

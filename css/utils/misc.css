@@ -1,0 +1,8 @@
+.wrapper {
+    margin-inline: auto;
+    width: min(71.25rem, 80%);
+}
+
+.highlight {
+    color: var(--clr-accent-1);
+}

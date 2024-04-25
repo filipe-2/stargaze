@@ -1,0 +1,30 @@
+.hero {
+    background: url('../../assets/imgs/banner.jpg');
+    background-size: cover;
+    object-fit: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.hero__description-wrapper {
+    position: relative;
+    width: 50%;
+    padding: 10px 15px;
+    border-radius: 25px;
+    backdrop-filter: blur(15px);
+}
+
+.hero__title {
+    font-size: 2.125rem;
+    color: var(--clr-neutral-1);
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.hero__description {
+    color: var(--clr-neutral-1);
+    line-height: 25px;
+    letter-spacing: 2.5px;
+}
