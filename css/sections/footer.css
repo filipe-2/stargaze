@@ -1,0 +1,17 @@
+footer {
+    /* background-image: url('../../assets/imgs/planets.jpg'); */
+    background-color: var(--bg-clr-1);
+    /* background-size: cover;
+    background-position: center;
+    object-fit: cover; */
+    border-top: 1px solid var(--clr-accent-1);
+    padding: 15px;
+}
+
+footer h3 {
+    text-align: center;
+}
+
+.copy-msg {
+    --font-size: 1rem;
+}

@@ -6,7 +6,7 @@
 .highlight {
     color: var(--clr-accent-1);
     font-family: 'Orbitron';
-    font-size: 1.5rem;
+    font-size: var(--font-size, 1.5rem);
 }
 
 .btn-one {

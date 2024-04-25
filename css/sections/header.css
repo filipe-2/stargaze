@@ -15,7 +15,7 @@ header .wrapper {
 }
 
 .branding,
-.navbar {
+.navlist {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,14 +46,14 @@ h1 {
     border-radius: 50%;
 }
 
-.navbar a {
+.navlist a {
     font-family: 'Orbitron';
     font-size: 0.85rem;
     font-weight: bold;
     padding: 5px 10px;
 }
 
-.navbar a.navbar__current-section {
+.navlist a.navlist__current-section {
     color: var(--clr-accent-1);
     border-bottom: 2px solid var(--clr-accent-1);
 }
