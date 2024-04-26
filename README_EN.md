@@ -1,6 +1,6 @@
 <p align="center">
     <img src="./assets/imgs/logo.png" height="128">
-    <h1 align="center">StarGaze <a href="https://www.google.com"><img src="https://img.shields.io/badge/EN–US-PT–BR-blue"/></a>
+    <h1 align="center">StarGaze <a href="https://github.com/filipe-2/stargaze/blob/main/README.md"><img src="https://img.shields.io/badge/Ler_em-portugu%C3%AAs-blue"/></a>
 </h1>
 </p>
 
