@@ -5,9 +5,9 @@
 </div>
 <br>
 
-**Desenvolvedores**: [Filipe Ramos](https://github.com/filipe-2), [Arthur Yvens](https://github.com/GOW-GuanYu), [Victor William](https://github.com/WillSouza21), [Yuri Castros](https://github.com/YuriCastroS)
-
 Bem-vindo! Este é o repositório do projeto **StarGaze**, aqui você encontrará todo o código e recursos usados no nosso projeto.
+
+**Desenvolvedores**: [Filipe Ramos](https://github.com/filipe-2), [Arthur Yvens](https://github.com/GOW-GuanYu), [Victor William](https://github.com/WillSouza21), [Yuri Castros](https://github.com/YuriCastroS)
 
 ## Preview
 
