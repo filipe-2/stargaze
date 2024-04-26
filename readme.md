@@ -3,7 +3,7 @@
     <h1 align="center">StarGaze</h1>
 </p>
 
-[!https://img.shields.io/badge/?label=Traduzir_para:-PT%E2%80%93BR-blue&labelColor=green&color=blue&link=https://www.google.com)
+![test](https://img.shields.io/badge/?label=Traduzir_para:-PT%E2%80%93BR-blue&labelColor=green&color=blue&link=https://www.google.com)
 
 ![Static Badge](https://img.shields.io/badge/?style=flat-square&logoSize=auto&label=en&labelColor=green&color=blue&link=https%3A%2F%2Fwww.google.xom&link=https%3A%2F%2Fwww.duckduckgo.com)
 
