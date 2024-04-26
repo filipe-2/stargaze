@@ -1,7 +1,5 @@
 <div align="center">
-    <div>
-        <img src="./assets/imgs/logo.png" height="128">
-    </div>
+    <img src="./assets/imgs/logo.png" height="128">
     <h1 align="center">StarGaze</h1>
     <a href="https://github.com/filipe-2/stargaze/blob/main/README_EN.md"><img src="https://img.shields.io/badge/Read_in-English-blue"/></a>
 </div>
