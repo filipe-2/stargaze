@@ -1,6 +1,7 @@
 <p align="center">
     <img src="./assets/imgs/logo.png" height="128">
-    <h1 align="center">StarGaze ![Static Badge](https://img.shields.io/badge/EN-PT–BR-blue)</h1>
+    <h1 align="center">StarGaze</h1>
+![Static Badge](https://img.shields.io/badge/EN-PT–BR-blue)
 </p>
 
 **Developers**: [Filipe Ramos](https://github.com/filipe-2), [Arthur Yvens](https://github.com/GOW-GuanYu), [Victor William](https://github.com/WillSouza21), [Yuri Castros](https://github.com/YuriCastroS)
