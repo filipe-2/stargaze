@@ -6,8 +6,9 @@ header {
     inset: 0 0 auto;
     z-index: 1;
     padding: 15px;
-    border-bottom: 1px solid var(--clr-accent-1);
+    border-bottom: var(--border-thickness-1) solid var(--clr-accent-1);
     box-shadow: 0 0 50px 15px var(--bg-clr-1);
+    transition: transform 0.3s;
 }
 
 header .wrapper {
@@ -35,8 +36,8 @@ h1 {
     color: var(--clr-accent-1);
     letter-spacing: 3px;
     font-size: 1.7rem;
-    font-family: 'Orbitron';
-    border-bottom: 2px solid var(--clr-accent-1);
+    font-family: var(--font-2);
+    border-bottom: var(--border-thickness-1) solid var(--clr-accent-1);
 }
 
 .branding h2 {
@@ -49,7 +50,7 @@ h1 {
 }
 
 .navlist a {
-    font-family: 'Orbitron';
+    font-family: var(--font-2);
     font-size: 0.85rem;
     font-weight: bold;
     padding: 5px 10px;
@@ -57,5 +58,5 @@ h1 {
 
 .navlist a.navlist__current-section {
     color: var(--clr-accent-1);
-    border-bottom: 2px solid var(--clr-accent-1);
+    border-bottom: var(--border-thickness-1) solid var(--clr-accent-1);
 }

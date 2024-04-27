@@ -3,7 +3,7 @@ footer {
     background-size: cover;
     background-position: bottom;
     object-fit: cover;
-    border-top: 1px solid var(--clr-accent-1);
+    border-top: var(--border-thickness-1) solid var(--clr-accent-1);
     padding: 15px;
 }
 
@@ -20,7 +20,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    font-family: 'Orbitron';
+    font-family: var(--font-2);
     font-size: 0.8rem;
 }
 
@@ -41,7 +41,7 @@ footer h3 {
     width: fit-content;
     margin-inline: auto;
     padding-inline: 10px;
-    border-top: 2px solid var(--clr-accent-1);
+    border-top: var(--border-thickness-1) solid var(--clr-accent-1);
     margin-bottom: 10px;
 }
 

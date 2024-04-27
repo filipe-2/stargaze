@@ -11,7 +11,7 @@
 
 .missions__title {
     color: var(--clr-neutral-2);
-    font-family: 'Orbitron';
+    font-family: var(--font-2);
 }
 
 .missions__cards-wrapper {
@@ -38,12 +38,11 @@
     isolation: isolate;
     cursor: pointer;
     overflow: hidden;
-    transition: transform 3s;
 }
 
 .missions__card-title {
     text-align: center;
-    font-family: 'Orbitron';
+    font-family: var(--font-2);
     font-size: 1.25rem;
     color: var(--clr-accent-1);
     background-color: var(--bg-clr-2);
@@ -55,14 +54,14 @@
     left: 10px;
     right: 10px;
     bottom: 210px;
-    transition: bottom 500ms;
+    transition: bottom var(--transition-time-1);
 }
 
 .missions__card-description {
     text-align: justify;
     opacity: 0;
     transform: translateY(calc(100% + 250px));
-    transition: transform, opacity, 500ms;
+    transition: transform, opacity, var(--transition-time-1);
 }
 
 .missions__card:hover .missions__card-title {

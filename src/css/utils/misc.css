@@ -24,3 +24,7 @@
     border-radius: 5px;
     padding: 5px 10px;
 }
+
+.expanded {
+    transform: translateY(calc(-100% + var(--border-thickness-1)));
+}
