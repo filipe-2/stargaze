@@ -15,6 +15,10 @@ footer {
     margin-block: 10px 25px;
 }
 
+.footer-nav a:hover{
+    color: var(--clr-accent-1);
+}
+
 .footer-nav__list {
     display: flex;
     flex-direction: column;
@@ -28,6 +32,7 @@ footer {
     align-items: center;
     font-size: 1rem;
 }
+
 
 .social a {
     color: var(--clr-accent-1);
