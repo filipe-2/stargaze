@@ -23,4 +23,4 @@ Tecnologias usadas:
 
 ## Como acessar 🔗
 
-Para acessar o website da StarGaze, simplesmente  [clique aqui](https://filipe-2.github.io/stargaze/) ou digite [filipe-2.github.io/stargaze](https://filipe-2.github.io/stargaze/) no seu navegador e pressione enter.
+O site estará disponível em breve.
