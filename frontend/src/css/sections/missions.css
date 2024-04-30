@@ -82,3 +82,38 @@
     border-radius: inherit;
     z-index: -1;
 }
+
+.missions__modal-wrapper {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-clr-2);
+    backdrop-filter: blur(5px);
+}
+
+.missions__modal-content-wrapper {
+    text-align: center;
+    background-color: var(--bg-clr-3);
+    min-height: 250px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 15px 15px 25px var(--bg-clr-1);
+    transition: transform var(--transition-time-1);
+}
+
+.missions__modal-title {
+    padding-bottom: 10px;
+    font-family: var(--font-2);
+    color: var(--clr-accent-1);
+    border-bottom: var(--border-thickness-1) solid var(--clr-accent-1);
+}
+
+.modal__closed {
+    transform: translateX(100%);
+}

@@ -6,3 +6,4 @@ import {
 } from './modules/utils.js';
 
 window.addEventListener('scroll', toggleHeaderVisibilityOnScroll);
+window.addEventListener('DOMContentLoaded', )
