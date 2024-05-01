@@ -11,7 +11,7 @@ Bem-vindo! Este é o repositório do projeto **StarGaze**, aqui você encontrar�
 
 ## Preview
 
-![Preview](./static/assets/imgs/preview.png)
+![Preview](./static/assets/imgs/preview2.png)
 
 ## Descrição
 
