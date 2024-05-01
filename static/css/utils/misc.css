@@ -9,7 +9,9 @@
     font-size: var(--font-size, 1.5rem);
     border-top: var(--border-thickness-1) solid var(--clr-accent-1);
     border-radius: 10px;
+    border-top-left-radius: 10px;
     padding-inline: 5px;
+    margin-left: 5px;
 }
 
 .btn-one {
