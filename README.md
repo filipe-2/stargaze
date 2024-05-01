@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="./frontend/assets/imgs/logo.png" height="128">
+    <img src="./static/assets/imgs/logo.png" height="128">
     <h1 align="center">StarGaze</h1>
     <a href="https://github.com/filipe-2/stargaze/blob/main/README-en.md"><img src="https://img.shields.io/badge/Read_in-English-blue"/></a>
 </div>
@@ -11,7 +11,7 @@ Bem-vindo! Este é o repositório do projeto **StarGaze**, aqui você encontrar�
 
 ## Preview
 
-![Preview](./frontend/assets/imgs/preview.png)
+![Preview](./static/assets/imgs/preview.png)
 
 ## Descrição
 
@@ -19,7 +19,7 @@ Este projeto consiste de um site de página única para uma Agência Espacial ch
 
 Tecnologias usadas:
 
-<img src="https://skillicons.dev/icons?i=html,css,js,python,flask,git&theme=dark" />
+<img src="https://skillicons.dev/icons?i=html,css,js,python,flask,git,sqlite&theme=dark" />
 
 ## Como acessar 🔗
 
