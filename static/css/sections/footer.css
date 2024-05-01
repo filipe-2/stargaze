@@ -1,5 +1,5 @@
 footer {
-    background-image: url('../../../assets/imgs/planets.jpg');
+    background-image: url('../../assets/imgs/planets.jpg');
     background-size: cover;
     background-position: bottom;
     object-fit: cover;
@@ -15,7 +15,7 @@ footer {
     margin-block: 10px 25px;
 }
 
-.footer-nav a:hover{
+.footer-nav a:hover {
     color: var(--clr-accent-1);
 }
 

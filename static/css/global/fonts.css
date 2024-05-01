@@ -4,7 +4,7 @@
     font-family: 'Cormorant SC';
     font-style: normal;
     font-weight: 400;
-    src: url('../../../assets/fonts/cormorant-sc/cormorant-sc-v18-latin-regular.woff2') format('woff2');
+    src: url('../../assets/fonts/cormorant-sc/cormorant-sc-v18-latin-regular.woff2') format('woff2');
 }
 
 /* cormorant-sc-700 - latin */
@@ -13,7 +13,7 @@
     font-family: 'Cormorant SC';
     font-style: normal;
     font-weight: 700;
-    src: url('../../../assets/fonts/cormorant-sc/cormorant-sc-v18-latin-700.woff2') format('woff2');
+    src: url('../../assets/fonts/cormorant-sc/cormorant-sc-v18-latin-700.woff2') format('woff2');
 }
 
 /* orbitron-regular - latin */
@@ -22,7 +22,7 @@
     font-family: 'Orbitron';
     font-style: normal;
     font-weight: 400;
-    src: url('../../../assets/fonts/orbitron/orbitron-v31-latin-regular.woff2') format('woff2');
+    src: url('../../assets/fonts/orbitron/orbitron-v31-latin-regular.woff2') format('woff2');
 }
 
 /* orbitron-700 - latin */
@@ -31,5 +31,5 @@
     font-family: 'Orbitron';
     font-style: normal;
     font-weight: 700;
-    src: url('../../../assets/fonts/orbitron/orbitron-v31-latin-700.woff2') format('woff2');
+    src: url('../../assets/fonts/orbitron/orbitron-v31-latin-700.woff2') format('woff2');
 }
