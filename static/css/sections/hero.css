@@ -24,6 +24,12 @@
     margin-bottom: 10px;
 }
 
+.hero__welcome-highlight {
+    border-bottom: var(--border-thickness-1) solid var(--clr-neutral-1);
+    border-radius: 10px;
+    padding-inline: 5px;
+}
+
 .hero__description {
     color: var(--clr-neutral-1);
     line-height: 25px;

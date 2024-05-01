@@ -98,22 +98,33 @@
 }
 
 .missions__modal-content-wrapper {
+    position: relative;
     text-align: center;
     background-color: var(--bg-clr-3);
     min-height: 250px;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 15px 15px 25px var(--bg-clr-1);
-    transition: transform var(--transition-time-1);
+    transition: opacity var(--transition-time-1);
+}
+
+.missions__modal-close {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: var(--clr-accent-3);
 }
 
 .missions__modal-title {
     padding-bottom: 10px;
     font-family: var(--font-2);
-    color: var(--clr-accent-1);
-    border-bottom: var(--border-thickness-1) solid var(--clr-accent-1);
+    color: var(--clr-neutral-1);
 }
 
-.modal__closed {
-    transform: translateX(100%);
+.modal-closed {
+    transition: transform var(--transition-time-1);
+    transform: translateX(calc(100% + 100vw));
 }
