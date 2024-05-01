@@ -19,7 +19,7 @@ Este projeto consiste de um site de página única para uma Agência Espacial ch
 
 Tecnologias usadas:
 
-<img src="https://skillicons.dev/icons?i=html,css,js,python,flask,git&theme=dark" />
+<img src="https://skillicons.dev/icons?i=html,css,js,python,flask,git,sqlalchemy&theme=dark" />
 
 ## Como acessar 🔗
 
