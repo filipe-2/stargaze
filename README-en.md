@@ -19,7 +19,7 @@ This project consists of a single-page website for a Space Agency called **StarG
 
 Technologies used:
 
-<img src="https://skillicons.dev/icons?i=html,css,js,python,flask,git&theme=dark" />
+<img src="https://skillicons.dev/icons?i=html,css,js,python,flask,git,sqlite&theme=dark" />
 
 ## How to access 🔗
 
