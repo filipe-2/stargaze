@@ -1,3 +1,5 @@
+// ------------------- Imports --------------------
+// Módulo utils
 import {
     // Variáveis
 
@@ -5,6 +7,8 @@ import {
     toggleHeaderVisibilityOnScroll,
 } from './modules/utils.js';
 
+
+// Módulo missions
 import {
     // Variáveis
     closeModalBtn,
@@ -12,6 +16,8 @@ import {
     // Funções
     closeModal,
 } from './modules/missions.js';
+// ------------------------------------------------
+
 
 // Esconde/expande o header sempre que ocorre rolagem da janela
 window.addEventListener('scroll', toggleHeaderVisibilityOnScroll);

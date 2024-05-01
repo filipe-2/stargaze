@@ -18,9 +18,12 @@ function toggleHeaderVisibilityOnScroll() {
     lastScrollTop = currentScrollTop;
 }
 
+
+// ------------------- Exports --------------------
 export {
     // Variáveis
 
     // Funções
     toggleHeaderVisibilityOnScroll,
 };
+// ------------------------------------------------
