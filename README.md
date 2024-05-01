@@ -15,7 +15,7 @@ Bem-vindo! Este é o repositório do projeto **StarGaze**, aqui você encontrar�
 
 ## Descrição
 
-Este projeto consiste de um site de página única para uma Agência Espacial chamada **StarGaze**.
+Este projeto consiste em um site de página única para uma Agência Espacial chamada **StarGaze**.
 
 Tecnologias usadas:
 
