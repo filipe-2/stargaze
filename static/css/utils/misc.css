@@ -15,15 +15,15 @@
 }
 
 .btn-one {
-    color: var(--clr-neutral-2);
-    background: var(--clr-accent-1);
-    border-color: var(--clr-accent-1);
+    color: var(--clr-accent-1);
+    background: transparent;
+    border: var(--border-thickness-1) solid var(--clr-accent-1);
     border-radius: 5px;
     padding: 5px 10px;
 }
 
 .btn-two {
-    border: 2px solid var(--clr-neutral-1);
+    border: var(--border-thickness-1) solid var(--clr-neutral-1);
     color: var(--clr-neutral-1);
     background: transparent;
     border-radius: 5px;

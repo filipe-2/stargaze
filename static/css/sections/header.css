@@ -25,6 +25,14 @@ header .wrapper {
     gap: 10px;
 }
 
+.navlist a {
+    transition: color var(--transition-time-1);
+}
+
+.navlist a:hover {
+    color: var(--clr-accent-1);
+}
+
 .branding__title-wrapper {
     display: flex;
     flex-direction: column;

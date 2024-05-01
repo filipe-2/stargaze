@@ -43,5 +43,10 @@
 
 .hero__btn {
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    transition: border-radius var(--transition-time-1);
+}
+
+.hero__btn:hover {
+    border-radius: 15px;
 }
