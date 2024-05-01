@@ -5,10 +5,16 @@ let lastScrollTop = 0;
 function toggleHeaderVisibilityOnScroll() {
     const currentScrollTop = window.scrollY || document.documentElement.scrollTop;
 
+    // Checa se a posição de rolagem atual é maior que zero e que a última rolagem
     if (currentScrollTop > lastScrollTop && currentScrollTop > 0) {
+        // Expande o header
         header.classList.add('expanded');
-    } else header.classList.remove('expanded');
+    } else {
+        // Colapsa o header
+        header.classList.remove('expanded');
+    }
 
+    // Atualiza a última posição da rolagem para a atual
     lastScrollTop = currentScrollTop;
 }
 
