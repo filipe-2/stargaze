@@ -120,6 +120,7 @@
 
 .missions__modal-title {
     padding-bottom: 10px;
+    box-shadow: 0px 5px 0px var(--clr-accent-1);
     font-family: var(--font-2);
     color: var(--clr-neutral-1);
 }
