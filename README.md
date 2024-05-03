@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="./static/assets/imgs/logo.png" height="128">
+    <img src="./app/static/assets/imgs/logo.png" height="128">
     <h1 align="center">StarGaze</h1>
     <a href="https://github.com/filipe-2/stargaze/blob/main/README-en.md"><img src="https://img.shields.io/badge/Read_in-English-blue"/></a>
 </div>
@@ -11,7 +11,7 @@ Bem-vindo! Este é o repositório do projeto **StarGaze**, aqui você encontrar�
 
 ## Preview
 
-![Preview](./static/assets/imgs/preview2.png)
+![Preview](./app/static/assets/imgs/preview2.png)
 
 ## Descrição
 
