@@ -2,9 +2,11 @@
 // Módulo utils
 import {
     // Variáveis
+    hideHeaderBtn,
 
     // Funções
     toggleHeaderVisibilityOnScroll,
+    toggleHeaderVisibilityOnClick,
 } from './modules/utils.js';
 
 
@@ -24,3 +26,4 @@ window.addEventListener('scroll', toggleHeaderVisibilityOnScroll);
 
 // Fecha o modal de missões sempre que o botão de fechá-lo é clicado
 closeModalBtn.addEventListener('click', closeModal);
+hideHeaderBtn.addEventListener('click', toggleHeaderVisibilityOnClick);

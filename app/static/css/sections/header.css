@@ -6,9 +6,28 @@ header {
     inset: 0 0 auto;
     z-index: 1;
     padding: 15px;
-    border-bottom: var(--border-thickness-1) solid var(--clr-accent-1);
     box-shadow: 0 0 50px 15px var(--bg-clr-1);
     transition: transform 0.3s;
+}
+
+header::before,
+header::after {
+    border-bottom: var(--border-thickness-1) solid var(--clr-accent-1);
+    transform: rotate(180deg) translateY(-100%);
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    inset: 0 calc(50% + 1.5rem) 0 0;
+    border-bottom-left-radius: 20px;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    inset: 0 0 0 calc(50% + 1.5rem);
+    border-bottom-right-radius: 20px;
 }
 
 header .wrapper {
@@ -67,4 +86,23 @@ h1 {
 .navlist a.navlist__current-section {
     color: var(--clr-accent-1);
     border-bottom: var(--border-thickness-1) solid var(--clr-accent-1);
+}
+
+.nav-btns__btn {
+    background-color: transparent;
+    color: var(--clr-neutral-3);
+    border-radius: 50%;
+    border: var(--border-thickness-1) solid var(--clr-neutral-3);
+    width: 30px;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+    transition: border-color, color, var(--transition-time-1);
+}
+
+.nav-btns__btn:hover {
+    border-color: var(--clr-accent-1);
+    color: var(--clr-accent-1)
 }

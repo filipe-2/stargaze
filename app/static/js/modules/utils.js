@@ -1,5 +1,7 @@
 const header = document.querySelector('#js-header');
+const hideHeaderBtn = document.querySelector('.hide-nav');
 let lastScrollTop = 0;
+
 
 // Função para esconder a barra de navegação ao rolar a tela
 function toggleHeaderVisibilityOnScroll() {
@@ -19,11 +21,29 @@ function toggleHeaderVisibilityOnScroll() {
 }
 
 
+// Função para esconder a barra de navegação ao clicar no botão de esconder
+function toggleHeaderVisibilityOnClick() {
+    if (header.classList.contains('expanded')) header.classList.remove('expanded');
+    else header.classList.add('expanded');
+
+    toggleIconOfHideHeaderBtn();
+}
+
+
+// Função para trocar o ícone do botão de esconder o header
+function toggleIconOfHideHeaderBtn() {
+    hideHeaderBtn.firstElementChild.classList.toggle('fa-chevron-down');
+    hideHeaderBtn.firstElementChild.classList.toggle('fa-chevron-up');
+}
+
+
 // ------------------- Exports --------------------
 export {
     // Variáveis
+    hideHeaderBtn,
 
     // Funções
     toggleHeaderVisibilityOnScroll,
+    toggleHeaderVisibilityOnClick
 };
 // ------------------------------------------------
