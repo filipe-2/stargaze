@@ -1,7 +1,7 @@
 <div align="center">
     <img src="./app/static/assets/imgs/logo.png" height="128">
     <h1 align="center">StarGaze</h1>
-    <a href="https://github.com/filipe-2/stargaze/blob/main/README-en.md"><img src="https://img.shields.io/badge/Read_in-English-purple"/></a>
+    <a href="https://github.com/filipe-2/stargaze/blob/main/README-en.md"><img src="https://img.shields.io/badge/Read_in-English-5c87ff"/></a>
 </div>
 <br>
 
@@ -21,7 +21,7 @@ organização das suas missões.
 
 ## Tecnologias utilizadas:
 
-Para este projeto, utilizamos as linguagens HTML, CSS e JavaScript no frontend e a linguagem Python, juntamente o framework Flask, no backend. Também utilizamos SQLAlchemy e SQLite.
+Utilizamos as linguagens HTML, CSS e JavaScript no frontend e a linguagem Python, juntamente o framework Flask, no backend. Também utilizamos SQLite e SQLAlchemy.
 
 <img src="https://skillicons.dev/icons?i=html,css,js,python,flask,git,sqlite&theme=dark" />
 
