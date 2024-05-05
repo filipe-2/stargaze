@@ -21,8 +21,10 @@ organização das suas missões.
 
 ## Tecnologias utilizadas:
 
+Para este projeto, utilizamos as linguagens HTML, CSS e JavaScript no frontend e a linguagem Python, juntamente o framework Flask, no backend. Também utilizamos SQLAlchemy e SQLite.
+
 <img src="https://skillicons.dev/icons?i=html,css,js,python,flask,git,sqlite&theme=dark" />
 
-## Como acessar 🔗
+## Como acessar o site 🔗
 
-O site estará disponível em breve.
+O site estará disponível em breve, e o link ficará disponível neste repositório.
