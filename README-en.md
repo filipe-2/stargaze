@@ -21,8 +21,6 @@ This project consists of a single-page website for a Space Agency called **StarG
 
 We used the languages HTML, CSS, and JavaScript on the frontend and Python, together with the Flask framework, on the backend. We also used SQLite and SQLAlchemy.
 
-<br>
-
 <img src="https://skillicons.dev/icons?i=html,css,js,python,flask,git,sqlite&theme=dark" />
 
 ## How to access the site 🔗
