@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 
-app = Flask(__name__, templates_folter='views', static_folder='static')
+app = Flask(__name__, template_folder='views', static_folder='public')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///crud.db'
 db = SQLAlchemy(app)
 
