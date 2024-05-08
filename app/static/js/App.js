@@ -26,4 +26,5 @@ window.addEventListener('scroll', toggleHeaderVisibilityOnScroll);
 
 // Fecha o modal de missões sempre que o botão de fechá-lo é clicado
 closeModalBtn.addEventListener('click', closeModal);
+
 hideHeaderBtn.addEventListener('click', toggleHeaderVisibilityOnClick);

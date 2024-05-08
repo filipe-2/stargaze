@@ -89,10 +89,7 @@
     justify-content: center;
     align-items: center;
     z-index: 100;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     background-color: var(--bg-clr-2);
     backdrop-filter: blur(5px);
 }
@@ -100,6 +97,10 @@
 .missions__modal-content-wrapper {
     position: relative;
     text-align: center;
+    background: url('../../assets/imgs/cosmos.jpg') no-repeat;
+    background-position: center;
+    width: 100%;
+    object-fit: cover;
     background-color: var(--bg-clr-3);
     min-height: 250px;
     padding: 15px;
@@ -120,7 +121,7 @@
 
 .missions__modal-title {
     padding-bottom: 10px;
-    box-shadow: 0px 5px 0px var(--clr-accent-1);
+    border-bottom: var(--border-thickness-1) solid var(--clr-accent-1);
     font-family: var(--font-2);
     color: var(--clr-neutral-1);
 }
