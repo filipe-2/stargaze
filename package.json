@@ -1,0 +1,15 @@
+{
+  "name": "stargaze",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">\r     <img src=\"./app/public/assets/imgs/logo.png\" height=\"128\">\r     <h1 align=\"center\">StarGaze</h1>\r     <a href=\"https://github.com/filipe-2/stargaze/blob/main/README-en.md\"><img src=\"https://img.shields.io/badge/Read_in-English-5c87ff\"/></a>\r </div>\r <br>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8"
+  }
+}
