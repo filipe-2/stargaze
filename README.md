@@ -21,7 +21,7 @@ organização das suas missões.
 
 ## Tecnologias utilizadas:
 
-Utilizamos as linguagens HTML, CSS e JavaScript no frontend e a linguagem Python, juntamente o framework Flask, no backend. Também utilizamos SQLite e SQLAlchemy.
+Utilizamos as linguagens HTML, CSS e JavaScript no frontend e a linguagem Python, juntamente com o framework Flask, no backend. Também utilizamos SQLite e SQLAlchemy.
 
 <br>
 
