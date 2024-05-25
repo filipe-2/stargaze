@@ -11,7 +11,8 @@ h1{
 div.main-login{
     width: 100vw;
     height: 100vh;
-    background-color: var(--bg-clr-3);;
+    background: rgb(34,34,34);
+    background: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(23,23,23,1) 50%, rgba(34,34,34,1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,8 +26,10 @@ div.left-login{
     flex-direction: column;
 }
 .left-login > h1{
+    font-family: var(--font-2);
     color: var( --clr-accent-1);
     font-size: 3vw;
+    padding-left: 50px;
 }
 .left-login-img{
     width: 35vw;
@@ -45,21 +48,24 @@ div.left-login{
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
-    background-color: var(--bg-clr-3);;
+    background-color: rgb(46, 46, 46);
     border-radius: 20px;
-    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.308);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.308);
     margin-bottom: 10px;
     color: white;
-    font-family: var(--font-1);
+    font-family: var(--font-2);
+    font-weight: 400;
 }
 .card-login > h1{
+    padding-bottom: 15px;
     color: var(--clr-accent-1);
-    font-family: var(--font-1);
-    font-weight: 800;
+    font-family: var(--font-2);
     margin: 0px;
+    font-weight: 800;
+    letter-spacing: 3px;
 }
 
-/* oOrganizando os Labels e Inputs*/
+/* Organizando os Labels e Inputs*/
 
 .textfield{
     width: 100%;
@@ -74,7 +80,8 @@ div.left-login{
     border: none;
     border-radius: 10px;
     padding: 15px;
-    color: #f0ffde;
+    color: white;
+    background-color: #ffffff60;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.37);
     outline: none;
     box-sizing: border-box;
