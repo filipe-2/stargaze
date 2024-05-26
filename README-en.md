@@ -7,7 +7,7 @@
 
 Welcome! This is the repository for the **StarGaze** project, here you will find all the code and assets used in our project.
 
-**Developers**: [Filipe Ramos](https://github.com/filipe-2), [Arthur Yvens](https://github.com/GOW-GuanYu), [Victor William](https://github.com/WillSouza21), [Yuri Castro](https://github.com/YuriCastroS)
+**Developers**: [Filipe Ramos](https://github.com/filipe-2), [Arthur Yvens](https://github.com/GOW-GuanYu), [Victor William](https://github.com/WillSouza21), [Yuri Castro](https://github.com/YuriCastroS), Marcelo
 
 ## Preview
 
