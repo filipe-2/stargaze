@@ -64,6 +64,17 @@
     transition: transform, opacity, var(--transition-time-1);
 }
 
+.missions__card-info {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.missions__card-info>h4 {
+    padding-inline: 5px;
+    border-bottom: var(--border-thickness-1) solid var(--clr-accent-1);
+}
+
 .missions__card:hover .missions__card-title {
     bottom: 10px;
 }
@@ -97,16 +108,18 @@
 .missions__modal-content-wrapper {
     position: relative;
     text-align: center;
-    background: url('../../assets/imgs/cosmos.jpg') no-repeat;
+    background: url('../../assets/imgs/spaceship-1.jpg') no-repeat;
     background-position: center;
+    background-size: cover;
     width: 100%;
     object-fit: cover;
-    background-color: var(--bg-clr-3);
     min-height: 250px;
+    max-height: 80%;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 15px 15px 25px var(--bg-clr-1);
     transition: opacity var(--transition-time-1);
+    overflow: scroll;
 }
 
 .missions__modal-close {
@@ -123,7 +136,46 @@
     padding-bottom: 10px;
     border-bottom: var(--border-thickness-1) solid var(--clr-accent-1);
     font-family: var(--font-2);
-    color: var(--clr-neutral-1);
+    color: var(--clr-accent-1);
+}
+
+.missions__modal-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.missions__modal-info {
+    margin-block: 15px;
+    overflow: scroll;
+}
+
+.missions__modal-info img {
+    width: min(700px, 75%);
+    max-height: min(300px, 50vmin);
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px var(--bg-clr-1);
+}
+
+.missions__modal-description {
+    text-align: left;
+}
+
+.missions__modal-description li {
+    margin-bottom: 10px;
+}
+
+.missions__modal-details div {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-block: 5px;
+}
+
+.missions__modal-details {
+    margin-bottom: 15px;
 }
 
 .modal-closed {

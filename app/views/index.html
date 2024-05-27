@@ -72,11 +72,11 @@
                     </h2>
 
                     <p class='hero__description'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eligendi in et, iusto odit
-                        sapiente
-                        expedita aut repudiandae fugit fuga, sint natus, explicabo consequatur. Tempore esse atque est
-                        quos
-                        nam.
+                        A StarGaze tem como uma de suas missões explorar planetas
+                        habitáveis e estudar recursos estratégicos na Via Láctea e
+                        Andrômeda. Fundada para ajudar e proteger os humanos e aliados da Via Láctea e Andrômeda, tem
+                        por fim
+                        aniquilar os Aeridians, que ambicionam dominar ambas as galáxias.
                     </p>
 
                     <div class="hero__btns-wrapper">
@@ -99,12 +99,17 @@
                     <div class="missions__card">
                         <div class="missions__card-text">
                             <h3 class="missions__card-title">ATLAS II</h3>
-                            <p class="missions__card-description">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Amet eius, nemo illo a quasi facere aut iure, natus hic odit dolor suscipit cumque ex
-                                iusto
-                                quia ea id sapiente error.
-                            </p>
+                            <div class="missions__card-description">
+                                <p class="missions__card-message">
+                                    Estabeleceu base avançada para estudar anomalias gravitacionais no sistema
+                                    estelar Zelphyr, na borda de Andrômeda, usada para investigar fenômenos cósmicos
+                                    entre Andrômeda e a Via Láctea.
+                                </p>
+                                <div class="missions__card-info">
+                                    <h4 class="missions__card-date">15/05/2121</h4>
+                                    <h4 class="missions__card-date">Finalizada</h4>
+                                </div>
+                            </div>
                         </div>
                         <img src="../public/assets/imgs/spaceship-1.jpg" alt="spaceship">
                     </div>
@@ -112,12 +117,17 @@
                     <div class="missions__card">
                         <div class="missions__card-text">
                             <h3 class="missions__card-title">MORPHEUS X</h3>
-                            <p class="missions__card-description">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Amet eius, nemo illo a quasi facere aut iure, natus hic odit dolor suscipit cumque ex
-                                iusto
-                                quia ea id sapiente error.
-                            </p>
+                            <div class="missions__card-description">
+                                <p class="missions__card-message">
+                                    Destruir o planeta "Nova Aetheris", pertencente à civilização dos Aeridians,
+                                    inimigos da raça humana e dos aliados da Via Láctea e de Andromeda desde a
+                                    aniquilação da raça Seraphimiana.
+                                </p>
+                                <div class="missions__card-info">
+                                    <h4>21/02/2124</h4>
+                                    <h4>Em andamento</h4>
+                                </div>
+                            </div>
                         </div>
                         <img src="../public/assets/imgs/spaceship-2.jpg" alt="spaceship">
                     </div>
@@ -125,26 +135,69 @@
                     <div class="missions__card">
                         <div class="missions__card-text">
                             <h3 class="missions__card-title">PLUTUS IV</h3>
-                            <p class="missions__card-description">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Amet eius, nemo illo a quasi facere aut iure, natus hic odit dolor suscipit cumque ex
-                                iusto
-                                quia ea id sapiente error.
-                            </p>
+                            <div class="missions__card-description">
+                                <p class="missions__card-message">
+                                    Infiltrar-se na base principal dos Aeridians, a raça expansionista que visa
+                                    conquistar Andrômeda e a Via Láctea, e desativar
+                                    o
+                                    gerador de campo de energia que protege sua frota de invasão.
+                                </p>
+                                <div class="missions__card-info">
+                                    <h4 class="missions__card-date">27/12/2125</h4>
+                                    <h4 class="missions__card-date">Agendada</h4>
+                                </div>
+                            </div>
                         </div>
                         <img src="../public/assets/imgs/spaceship-3.jpg" alt="spaceship">
                     </div>
                 </div>
             </div>
 
-            <div class="missions__modal-wrapper">
+            <div class="missions__modal-wrapper modal-closed">
                 <div class="missions__modal-content-wrapper wrapper">
-                    <h2 class="missions__modal-title">Gerenciar missões</h2>
+                    <h2 class="missions__modal-title">ATLAS II</h2>
                     <button class="missions__modal-close">
                         <i class="fa fa-close"></i>
                     </button>
 
-                    <div class="missions__modal-options"></div>
+                    <div class="missions__modal-options">
+                        <button class="missions__modal-edit btn-one"><i class="fa fa-edit"></i></button>
+                        <button class="missions__modal-remove btn-one"><i class="fa fa-remove"></i></button>
+                    </div>
+
+                    <div class="missions__modal-info">
+                        <div class="missions__modal-details">
+                            <div>
+                                <h3>Lançamento: 15/05/2121</h3>
+                                <h3>Estado: Finalizada</h3>
+                                <h3>Duração: 3 anos</h3>
+                            </div>
+                            <div>
+                                <h3>Destino: Zelphyr</h3>
+                                <h3>Carga útil: Infraestutural</h3>
+                                <h3>Custo: $2.529.300,89</h3>
+                            </div>
+                        </div>
+                        <p class='missions__modal-description'>
+                            A StarGaze estabeleceu uma base avançada no sistema estelar Zelphyr, na borda da galáxia de
+                            Andrômeda, com o propósito específico de estudar e investigar anomalias gravitacionais que
+                            ocorrem na região limítrofe entre Andrômeda e a Via Láctea. Essas anomalias são de
+                            particular interesse devido ao seu potencial para revelar os segredos da interação entre as
+                            duas galáxias e os fenômenos cósmicos que ocorrem em suas fronteiras.
+                        </p>
+                        <ol class='missions__modal-description'>
+                            <li><strong>Pesquisa Aprofundada de Anomalias Gravitacionais:</strong> A base avançada em
+                                Zelphyr concentra seus esforços na coleta de dados detalhados sobre as anomalias
+                                gravitacionais presentes na região.</li>
+                            <li><strong>Modelagem e Simulação Avançada:</strong> Utilizando os dados coletados, os
+                                cientistas da StarGaze realizam modelagem e simulação avançadas para compreender melhor
+                                a
+                                natureza e a origem das anomalias gravitacionais.</li>
+                            <li><strong>Exploração de Wormholes e Pontes de Einstein-Rosen:</strong> A presença de
+                                anomalias gravitacionais na região sugere a possibilidade da existência de wormholes
+                                (buracos de minhoca) e pontes de Einstein-Rosen.</li>
+                        </ol>
+                    </div>
                 </div>
             </div>
         </section>

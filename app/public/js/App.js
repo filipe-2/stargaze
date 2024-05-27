@@ -14,9 +14,10 @@ import {
 import {
     // Variáveis
     closeModalBtn,
+    missionsCards,
 
     // Funções
-    closeModal,
+    toggleModal,
 } from './modules/missions.js';
 // ------------------------------------------------
 
@@ -25,6 +26,8 @@ import {
 window.addEventListener('scroll', toggleHeaderVisibilityOnScroll);
 
 // Fecha o modal de missões sempre que o botão de fechá-lo é clicado
-closeModalBtn.addEventListener('click', closeModal);
+closeModalBtn.addEventListener('click', toggleModal);
 
 hideHeaderBtn.addEventListener('click', toggleHeaderVisibilityOnClick);
+
+missionsCards.forEach((card) => card.addEventListener('click', toggleModal));

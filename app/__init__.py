@@ -10,7 +10,8 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 
 from app.models.missions import Missions
 with app.app_context():
-    db.create_all()    
+    db.create_all()   
+     
 @app.route('/') # Migrar para a pasta 'routes'
 @cross_origin()
 def index():

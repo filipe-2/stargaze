@@ -1,5 +1,5 @@
 footer {
-    background-color: var(--bg-clr-3);
+    background-color: var(--bg-clr-1);
     background-size: cover;
     background-position: bottom;
     object-fit: cover;
@@ -59,6 +59,7 @@ footer h3 {
     border-radius: 10px;
     padding-inline: 5px;
 }
+
 .copy-msg {
     --font-size: 1rem;
 }
