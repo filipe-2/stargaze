@@ -17,8 +17,8 @@ with app.app_context():
 from app.controllers.reso_missions import Index, MissionsCreate,MissionsUpdate, MissionsDelete
 api.add_resource(Index, '/get') 
 api.add_resource(MissionsCreate, '/create')
-api.add_resource(MissionsUpdate, '/update')
-api.add_resource(MissionsDelete, '/delete')
+api.add_resource(MissionsUpdate, '/update/<int:id>')#digitar Id da missão após /
+api.add_resource(MissionsDelete, '/delete/<int:id>')
 
 @app.route('/',  methods=['GET', 'POST','DELETE','PUT']) # Mover para a pasta 'routes' e declarando métodos
 @cross_origin()

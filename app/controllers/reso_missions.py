@@ -9,18 +9,14 @@ def parse_date(x):
 
 # Adicionando missões
 parser = reqparse.RequestParser()# Definição de argumentos
-parser.add_argument('id', required=True, help="Digite o ID", type=int)
-parser.add_argument('name', required=True, help="Digite o nome")
-parser.add_argument('date_launch', required=True, help="Digite a data", type=parse_date)
-
-# Atualizar missões date_launch = datetime.strptime(args['date_launch'], '%Y-%m-%d') isso aqui, a gente tem q implementar isso
-parser_update = reqparse.RequestParser() 
-parser_update.add_argument('id', required=True, help="Digite o ID", type=int)
-parser_update.add_argument('name', required=True, help="Digite o nome")
-parser_update.add_argument('date_launch', required=True, help="Digite a data", type=parse_date)
-#Deletar missões
-parser_delete = reqparse.RequestParser()
-parser_delete.add_argument('id', required= True, help="Digite o ID", type=int)
+parser.add_argument('name', required=True, help="Type mission name")
+parser.add_argument('date_launch', required=True, help="Type mission date launch", type=parse_date)
+parser.add_argument('destiny', required=True, help="Type a destiny", type=str)
+parser.add_argument('status', required=True, help="Type mission state", type=str)
+parser.add_argument('crew', required=True, help="Type mission crew", type=str)
+parser.add_argument('load', required=True, help="Type mission load", type=str)
+parser.add_argument('cost', required=True, help="Type mission cost", type=float)
+parser.add_argument('status_details', required=True, help="Type mission status", type=str)
 
 class Index(Resource):
     def get(self):
@@ -28,27 +24,29 @@ class Index(Resource):
     
 class MissionsCreate(Resource):
     def post(self): 
-        try:
             datab = parser.parse_args()
-            Missions.save_mission(self, datab['id'], datab['name'], datab['date_launch'])
-            return {"message": 'Mission added!'}, 200
-        except Exception as e:
-            return jsonify({'status': 500, 'msg': f'{e}'}), 500
+            Missions.save_mission(
+                self, datab['name'], datab['date_launch'], datab['destiny'], 
+                datab['status'], datab['crew'], datab['load'], datab['cost'], datab['status_details']
+            )
+            return jsonify({"message": 'Mission added!'}), 200
 
 class MissionsUpdate(Resource):
-    def put(self):
+    def put(self, id):
         try:
-            datab = parser_update.parse_args() 
-            Missions.update_mission(self, datab['id'], datab['name'], datab['date_launch'])
+            datab = parser.parse_args() 
+            Missions.update_mission(
+                self, id, datab['name'], datab['date_launch'], datab['destiny'], 
+                datab['status'], datab['crew'], datab['load'], datab['cost'], datab['status_details']
+            )
             return {"message": 'Mission Updated!'}, 200    
         except Exception as e:
             return jsonify({'status': 500, 'msg': f'{e}'}), 500
 
 class MissionsDelete(Resource):
-    def delete(self):
+    def delete(self, id):
         try:
-            datab = parser_delete.parse_args()
-            Missions.delete_mission(self,datab['id'])
+            Missions.delete_mission(self,id)
             return {"message": 'Mission Deleted!'}, 200
         except Exception as e:
             return jsonify({'status': 500, 'msg': f'{e}'}), 500

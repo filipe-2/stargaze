@@ -8,29 +8,29 @@ class Missions(db.Model):
     name = db.Column(db.String(255))
     date_launch = db.Column(db.Date)
     destiny = db.Column(db.String(255)) 
-    state = db.Column(db.String(255)) 
+    status = db.Column(db.String(255)) 
     crew = db.Column(db.String(255))
     load = db.Column(db.String(255))
     duration = db.Column(db.Interval)
     cost = db.Column(db.DECIMAL)
-    status = db.Column(db.String(255))
+    status_details = db.Column(db.String(255))
     
-    def __init__(self, id, name, date_launch, destiny, state, crew, load, duration, cost, status):
+    def __init__(self, id, name, date_launch, destiny, status, crew, load, duration, cost, status_details):
         self.name = name
         self.date_launch = date_launch
         self.id = id
         self.destiny = destiny 
-        self.state = state 
+        self.status = status 
         self.crew = crew 
         self.load = load# carga útil
         self.duration = duration# duração
         self.cost = cost# custo
-        self.status = status# status
+        self.status_details = status_details# status
 
     # Salvar missões
-    def save_mission(self, id, name, date_launch, destiny, state, crew, load, duration, cost, status):
+    def save_mission(self, name, date_launch, destiny, status, crew, load, duration, cost, status_details):
         try:
-            add_to_db = Missions(id, name, date_launch, destiny, state, crew, load, duration, cost, status)
+            add_to_db = Missions(name, date_launch, destiny, status, crew, load, duration, cost, status_details)
             print(add_to_db)
             db.session.add(add_to_db) 
             db.session.commit() # Confirmar e salvar as alterações no banco de dados
@@ -39,11 +39,11 @@ class Missions(db.Model):
             print('Ocorreu um erro ao salvar a missão: ', e)
 
     # Atualizar missões
-    def update_mission(self, id, name, date_launch, destiny, state, crew, load, duration, cost, status):
+    def update_mission(self, id, name, date_launch, destiny, status, crew, load, duration, cost, status_details):
         try:
             db.session.query(Missions).filter(Missions.id==id).update({
-                'name':name, 'date_launch': date_launch, 'destiny':destiny, 'state':state,
-                'crew':crew, 'load':load, 'duration':duration, 'cost': cost, 'status':status
+                'name':name, 'date_launch': date_launch, 'destiny':destiny, 'status':status,
+                'crew':crew, 'load':load, 'duration':duration, 'cost': cost, 'status_details':status_details
             })
             db.session.commit() # Confirmar e salvar as alterações no banco de dados
             print('Missão atualizada com sucesso.')
