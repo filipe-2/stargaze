@@ -1,3 +1,4 @@
+from sqlalchemy import desc
 from app import db
     
 class Missions(db.Model):
@@ -30,7 +31,7 @@ class Missions(db.Model):
     # Salvar missões
     def save_mission(self, name, date_launch, destiny, status, crew, load, duration, cost, status_details):
         try:
-            add_to_db = Missions(name, date_launch, destiny, status, crew, load, duration, cost, status_details)
+            add_to_db = Missions(None, name, date_launch, destiny, status, crew, load, duration, cost, status_details)
             print(add_to_db)
             db.session.add(add_to_db) 
             db.session.commit() # Confirmar e salvar as alterações no banco de dados
@@ -59,7 +60,7 @@ class Missions(db.Model):
         except Exception as e:
             print('Ocorreu um erro ao remover a missão: ', e)
     
-    # Get
+    # Obter missão específica
     def get_mission(self, id):
         try:
             mission = db.session.query(Missions).get(id)
@@ -67,3 +68,15 @@ class Missions(db.Model):
             return mission
         except Exception as e:
             print('Ocorreu um erro ao obter a missão: ', e)
+
+    # Obter todas as missões ordenadas pela data de lançamento em ordem descrescente entre as datas (se passadas)
+    def get_all_missions(self, start_date, end_date):
+        try:
+            query = db.session.query(Missions)
+            if start_date and end_date:
+                query = query.filter(Missions.date_launch.between(start_date, end_date))
+            missions = query.order_by(desc(Missions.date_launch)).all()
+            print('Todas as missões obtidas com sucesso.')
+            return missions
+        except Exception as e:
+            print('Ocorreu um erro ao obter todas as missões: ', e)
