@@ -148,7 +148,7 @@
 
 .missions__modal-info {
     margin-block: 15px;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .missions__modal-info img {
