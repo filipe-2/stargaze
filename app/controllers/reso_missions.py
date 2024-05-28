@@ -30,7 +30,7 @@ class MissionsCreate(Resource):
     def post(self): 
         try:
             datab = parser.parse_args()
-            Missions.save_missions(self, datab['id'], datab['name'], datab['date_launch'])
+            Missions.save_mission(self, datab['id'], datab['name'], datab['date_launch'])
             return {"message": 'Mission added!'}, 200
         except Exception as e:
             return jsonify({'status': 500, 'msg': f'{e}'}), 500
@@ -39,7 +39,7 @@ class MissionsUpdate(Resource):
     def put(self):
         try:
             datab = parser_update.parse_args() 
-            Missions.update_missions(self, datab['id'], datab['name'], datab['date_launch'])
+            Missions.update_mission(self, datab['id'], datab['name'], datab['date_launch'])
             return {"message": 'Mission Updated!'}, 200    
         except Exception as e:
             return jsonify({'status': 500, 'msg': f'{e}'}), 500
@@ -48,7 +48,7 @@ class MissionsDelete(Resource):
     def delete(self):
         try:
             datab = parser_delete.parse_args()
-            Missions.delete_missions(self,datab['id'])
+            Missions.delete_mission(self,datab['id'])
             return {"message": 'Mission Deleted!'}, 200
         except Exception as e:
             return jsonify({'status': 500, 'msg': f'{e}'}), 500
