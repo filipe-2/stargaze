@@ -94,9 +94,10 @@
                 <h2 class="missions__title">Missões</h2>
             </div>
 
-            <div class="wrapper">
+            <div class="missions__content-wrapper wrapper">
                 <div class="missions__cards-wrapper">
-                    <div class="missions__card">
+                    <!-- Os cards das missões serão carregados aqui -->
+                    <!-- <div class="missions__card">
                         <div class="missions__card-text">
                             <h3 class="missions__card-title">ATLAS II</h3>
                             <div class="missions__card-description">
@@ -149,9 +150,62 @@
                             </div>
                         </div>
                         <img src="../public/assets/imgs/spaceship-3.jpg" alt="spaceship">
-                    </div>
+                    </div> -->
                 </div>
+
+                <button class="missions__add-card" id="add-mission-button"><i class="fa fa-plus"></i></button>
             </div>
+
+            <form class="missions__modal-wrapper missions__modal-form modal-closed">
+                <div class="missions__modal-form-content-wrapper wrapper">
+                    <div class="missions__modal-form-field">
+                        <label for="name">Nome:</label>
+                        <input type="text" id='name' name='name'>
+                    </div>
+
+                    <div class="missions__modal-form-field">
+                        <label for="date-launch">Data de lançamento:</label>
+                        <input type="text" id='date-launch' name='date-launch'>
+                    </div>
+
+                    <div class="missions__modal-form-field">
+                        <label for="destiny">Destino:</label>
+                        <input type="text" id='destiny' name='destiny'>
+                    </div>
+
+                    <div class="missions__modal-form-field">
+                        <label for="status">Status:</label>
+                        <input type="text" id='status' name='status'>
+                    </div>
+
+                    <div class="missions__modal-form-field">
+                        <label for="crew">Tripulação:</label>
+                        <input type="text" id='crew' name='crew'>
+                    </div>
+
+                    <div class="missions__modal-form-field">
+                        <label for="load">Carga:</label>
+                        <input type="text" id='load' name='load'>
+                    </div>
+
+                    <div class="missions__modal-form-field">
+                        <label for="duration">Duração:</label>
+                        <input type="text" id='duration' name='duration'>
+                    </div>
+
+                    <div class="missions__modal-form-field">
+                        <label for="cost">Custo:</label>
+                        <input type="text" id='cost' name='cost'>
+                    </div>
+
+                    <div class="missions__modal-form-field">
+                        <label for="status-details">Detalhes do status:</label>
+                        <input type="text" id='status-details' name='status-details'>
+                    </div>
+
+                    <button class="missions__submit">Adicionar</button>
+                </div>
+            </form>
 
             <div class="missions__modal-wrapper modal-closed">
                 <div class="missions__modal-content-wrapper wrapper">
@@ -186,16 +240,22 @@
                             duas galáxias e os fenômenos cósmicos que ocorrem em suas fronteiras.
                         </p>
                         <ol class='missions__modal-description'>
-                            <li><strong>Pesquisa Aprofundada de Anomalias Gravitacionais:</strong> A base avançada em
+                            <li>
+                                <strong>Pesquisa Aprofundada de Anomalias Gravitacionais:</strong> A base avançada em
                                 Zelphyr concentra seus esforços na coleta de dados detalhados sobre as anomalias
-                                gravitacionais presentes na região.</li>
-                            <li><strong>Modelagem e Simulação Avançada:</strong> Utilizando os dados coletados, os
+                                gravitacionais presentes na região.
+                            </li>
+                            <li>
+                                <strong>Modelagem e Simulação Avançada:</strong> Utilizando os dados coletados, os
                                 cientistas da StarGaze realizam modelagem e simulação avançadas para compreender melhor
                                 a
-                                natureza e a origem das anomalias gravitacionais.</li>
-                            <li><strong>Exploração de Wormholes e Pontes de Einstein-Rosen:</strong> A presença de
+                                natureza e a origem das anomalias gravitacionais.
+                            </li>
+                            <li>
+                                <strong>Exploração de Wormholes e Pontes de Einstein-Rosen:</strong> A presença de
                                 anomalias gravitacionais na região sugere a possibilidade da existência de wormholes
-                                (buracos de minhoca) e pontes de Einstein-Rosen.</li>
+                                (buracos de minhoca) e pontes de Einstein-Rosen.
+                            </li>
                         </ol>
                     </div>
                 </div>
