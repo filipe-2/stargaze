@@ -173,7 +173,8 @@
     overflow: scroll;
 }
 
-.missions__modal-close {
+.missions__modal-close,
+.missions__modal-form-close {
     background-color: transparent;
     border: none;
     position: absolute;

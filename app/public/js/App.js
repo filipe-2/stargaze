@@ -17,6 +17,7 @@ import {
     missionsCards,
     missionsModal,
     form,
+    closeFormBtn,
     addCardBtn,
 
     // Funções
@@ -31,10 +32,9 @@ window.addEventListener('scroll', toggleHeaderVisibilityOnScroll);
 // Fecha o modal de missões sempre que o botão de fechá-lo é clicado
 closeModalBtn.addEventListener('click', () => toggleModal(missionsModal));
 
+closeFormBtn.addEventListener('click', () => toggleModal(form));
 hideHeaderBtn.addEventListener('click', toggleHeaderVisibilityOnClick);
-
 missionsCards.forEach((card) => card.addEventListener('click', () => toggleModal(missionsModal)));
-
 addCardBtn.addEventListener('click', () => toggleModal(form));
 
 document.addEventListener('DOMContentLoaded', () => {
