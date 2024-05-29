@@ -13,7 +13,6 @@ def parse_mission(mission):
     del mission['_sa_instance_state'] # remove instância inconvertível do banco de dados
     mission['cost'] = float(mission['cost'])
     mission['duration'] = f'{mission["duration"].days} days'
-    mission['cost'] = float(mission['cost'])
     mission['date_launch'] = mission['date_launch'].strftime('%Y-%m-%d')
     return mission
 
@@ -38,7 +37,7 @@ parser.add_argument('status_details', required=True, help="Type mission status",
 
 class MissionsCreate(Resource):
     def post(self): 
-        try:
+        
             datab = parser.parse_args() 
             datab['duration'] = datab['date_return'] - datab['date_launch'] # cálculo da duração da missão
             Missions.save_mission(
@@ -46,8 +45,7 @@ class MissionsCreate(Resource):
                 datab['crew'], datab['load'], datab['duration'], datab['cost'], datab['status_details']
             )
             return {"message": 'Mission added!'}, 200    
-        except Exception as e:
-            return jsonify({'status': 500, 'msg': f'{e}'}), 500
+        
 
 class MissionsUpdate(Resource):
     def put(self, id):

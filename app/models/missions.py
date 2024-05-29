@@ -2,7 +2,6 @@ from sqlalchemy import desc
 from app import db
     
 class Missions(db.Model):
-    
     __tablename__ = 'missions'
     __table_args__ = {'sqlite_autoincrement': True}
     id = db.Column(db.Integer, primary_key=True)
