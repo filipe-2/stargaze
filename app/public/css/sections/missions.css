@@ -114,7 +114,8 @@
     z-index: -1;
 }
 
-.missions__modal-wrapper {
+.missions__modal-wrapper,
+.missions__modal-form-wrapper {
     position: fixed;
     display: flex;
     justify-content: center;
@@ -130,11 +131,13 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    
 }
 
 .missions__modal-form-field {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
@@ -159,12 +162,11 @@
     position: relative;
     text-align: center;
     background-color: var(--bg-clr-3);
-
     width: 100%;
     object-fit: cover;
     min-height: 250px;
     max-height: 80%;
-    padding: 15px;
+    padding: 15px 50px;
     border-radius: 5px;
     box-shadow: 15px 15px 25px var(--bg-clr-1);
     transition: opacity var(--transition-time-1);
@@ -183,6 +185,18 @@
 
 .missions__submit {
     margin-top: 25px;
+    background-color: transparent;
+    border: var(--border-thickness-1) solid var(--clr-accent-1);
+    color: var(--clr-accent-1);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.25rem;
+    transition: background-color var(--transition-time-1), color var(--transition-time-1);
+}
+
+.missions__submit:hover {
+    background-color: var(--clr-accent-1);
+    color: var(--clr-neutral-2);
 }
 
 .missions__modal-title {
@@ -237,10 +251,21 @@
 }
 
 .missions__modal-form-field input {
-    background-color: var(--bg-clr-1);
+    background-color: transparent;
     color: var(--clr-neutral-1);
     border-radius: 10px;
     border: var(--border-thickness-1) solid var(--clr-accent-1);
     margin-block: 10px;
     padding: 8px 5px;
+    font-family: var(--font-2);
+}
+
+.missions__add-mission-title {
+    font-family: var(--font-2);
+    color: var(--clr-accent-1);
+    margin-block: 10px;
+    margin-bottom: 20px;
+    border-bottom: var(--border-thickness-1) solid var(--clr-accent-1);
+    border-top: var(--border-thickness-1) solid var(--clr-accent-1);
+    border-radius: 15px;
 }
