@@ -156,6 +156,7 @@
     box-shadow: 15px 15px 25px var(--bg-clr-1);
     transition: opacity var(--transition-time-1);
     overflow: scroll;
+    overflow-x: hidden;
 }
 
 .missions__modal-form-content-wrapper {
